@@ -1,7 +1,45 @@
+:root {
+  font-size: 14px;
+}
+
 body {
   background-color: #181f2a;
   color: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  padding: 80px 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu li {
+  padding-left: 56px;
+}
+
+.hero-section {
+  padding: 0px 360px;
 }
 /*# sourceMappingURL=master.css.map */

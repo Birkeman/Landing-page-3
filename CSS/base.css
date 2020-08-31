@@ -1,7 +1,11 @@
 body {
-  background-color: var(--dark-blue-2);
-  color: var(--white);
-  font-family: var(--font-body);
+  background-color: dark-blue-2;
+  color: white;
+  font-family: font-body;
   font-size: 14px;
+}
+
+li {
+  text-decoration: none;
 }
 /*# sourceMappingURL=base.css.map */

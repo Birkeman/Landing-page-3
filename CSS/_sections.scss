@@ -1,0 +1,16 @@
+header{
+    padding: $pad-mid;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    li{
+        padding-left: 56px;
+    }
+}
+
+//Hero section
+.hero-section{
+    padding: $pad-lg;
+}
