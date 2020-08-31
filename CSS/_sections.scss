@@ -8,9 +8,17 @@ header{
     li{
         padding-left: 56px;
     }
+    a{
+        font-family: $font-heading;
+    }
 }
 
 //Hero section
 .hero-section{
     padding: $pad-lg;
+    text-align: center;
+    h1{
+        font-family: $font-heading;
+        font-size: 30px;
+    }
 }

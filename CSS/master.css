@@ -1,11 +1,6 @@
-:root {
-  font-size: 14px;
-}
-
 body {
   background-color: #181f2a;
   color: white;
-  font-family: "Open Sans", sans-serif;
   padding: 0px;
   margin: 0px;
 }
@@ -17,6 +12,11 @@ li {
 a {
   text-decoration: none;
   color: white;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 header {
@@ -39,7 +39,17 @@ header {
   padding-left: 56px;
 }
 
+.menu a {
+  font-family: "Raleway", sans-serif;
+}
+
 .hero-section {
   padding: 0px 360px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
 }
 /*# sourceMappingURL=master.css.map */
