@@ -26,6 +26,9 @@ p{
 }
 section{
     padding: $pad-mid;
+    @media screen and (max-width:375px){
+        padding: 40px 32px !important;
+    }
 }
 .hero-section img,
 .productive img {
@@ -35,6 +38,9 @@ section{
 }
 h1 {
     font-size: 1.7rem;
+    @media screen and (max-width:375px){
+        font-size: 1.5rem !important;
+    }
 }
 
 h2 {
@@ -43,6 +49,9 @@ h2 {
 
 h3 {
     font-size: 1.4rem;
+    @media screen and (max-width:375px){
+        font-size: 1rem;
+    }
 }
 h1, h2, h3, h4{
     font-family: $font-heading;

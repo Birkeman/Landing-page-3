@@ -33,6 +33,12 @@ section {
   padding: 86px 75px;
 }
 
+@media screen and (max-width: 375px) {
+  section {
+    padding: 40px 32px !important;
+  }
+}
+
 .hero-section img,
 .productive img {
   width: 100%;
@@ -44,12 +50,24 @@ h1 {
   font-size: 1.7rem;
 }
 
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
 h2 {
   font-size: 1.5rem;
 }
 
 h3 {
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 375px) {
+  h3 {
+    font-size: 1rem;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -67,14 +85,41 @@ header {
   background-color: #1c2431;
 }
 
+@media screen and (max-width: 375px) {
+  header {
+    padding: 40px 32px !important;
+  }
+  header img {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .top-logo {
+    margin: auto !important;
+  }
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media screen and (max-width: 375px) {
+  .menu {
+    display: -webkit-box !important;
+  }
+}
+
 .menu li {
   padding-left: 56px;
+}
+
+@media screen and (max-width: 375px) {
+  .menu li {
+    padding: 5px !important;
+  }
 }
 
 .menu a {
@@ -105,6 +150,12 @@ header {
           align-items: center;
 }
 
+@media screen and (max-width: 375px) {
+  .hero-section {
+    background-image: url("/Assets/img/bg-curvy-mobile.svg") !important;
+  }
+}
+
 .hero-section h1 {
   font-size: 32px;
   line-height: 1.6;
@@ -112,6 +163,12 @@ header {
 
 .hero-section p {
   padding: 0px 70px;
+}
+
+@media screen and (max-width: 375px) {
+  .hero-section p {
+    padding: 0px;
+  }
 }
 
 button {
@@ -154,6 +211,18 @@ button {
   padding: 40px 32px;
 }
 
+@media screen and (max-width: 375px) {
+  .single-bullet {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 375px) and (max-width: 375px) {
+  .single-bullet {
+    padding: 0px;
+  }
+}
+
 .productivity {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,8 +240,26 @@ button {
   padding-top: 0px;
 }
 
+@media screen and (max-width: 375px) {
+  .productivity {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .productivity img {
+    width: 100%;
+  }
+}
+
 .productivity-text {
   padding: 86px 75px;
+}
+
+@media screen and (max-width: 375px) {
+  .productivity-text {
+    padding: 0px;
+  }
 }
 
 .productivity-link {
@@ -182,6 +269,14 @@ button {
 
 .productivity-link img {
   vertical-align: middle;
+}
+
+@media screen and (max-width: 375px) {
+  .productivity-link img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .testimonials {
@@ -197,6 +292,15 @@ button {
   margin: 0px;
 }
 
+@media screen and (max-width: 375px) {
+  .testimonials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .single-testimonial {
   width: 33.33%;
   background-color: #202a3c;
@@ -205,6 +309,14 @@ button {
   padding: 45px 25px;
   border-radius: 5px;
   position: relative;
+}
+
+@media screen and (max-width: 375px) {
+  .single-testimonial {
+    width: 90%;
+    margin-left: 0px;
+    margin-bottom: 16px;
+  }
 }
 
 .profile-info {
@@ -255,6 +367,12 @@ button {
   padding: 0px 48px;
 }
 
+@media screen and (max-width: 375px) {
+  .subscribe-text p {
+    font-size: 8px;
+  }
+}
+
 .container {
   position: absolute;
   top: 50px;
@@ -267,6 +385,15 @@ button {
   text-align: center;
 }
 
+@media screen and (max-width: 375px) {
+  .container {
+    min-width: 50%;
+    max-width: 70%;
+    padding: 0px;
+    top: 20px;
+  }
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,6 +401,16 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
 }
 
 input {
@@ -286,10 +423,33 @@ input {
   background-color: white;
 }
 
+@media screen and (max-width: 375px) {
+  input {
+    width: auto;
+  }
+}
+
 .get-btn {
   width: 30%;
   max-width: 250px;
   margin-left: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .get-btn {
+    max-width: 100%;
+    width: auto;
+    min-width: 100%;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  footer {
+    padding-top: 300px;
+    background-color: #0b1523;
+  }
 }
 
 .footer-info {
@@ -304,6 +464,15 @@ input {
 
 .footer-info > div {
   padding: 16px 40px;
+}
+
+@media screen and (max-width: 375px) {
+  .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer-logo {
@@ -323,6 +492,19 @@ input {
   padding-top: 0px;
 }
 
+@media screen and (max-width: 375px) {
+  .footer-location {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer-contact {
+    margin-left: 0px;
+    padding-left: 26px !important;
+  }
+}
+
 .footer-phone, .footer-mail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,6 +519,13 @@ input {
   padding: 0px;
 }
 
+@media screen and (max-width: 375px) {
+  .footer-phone, .footer-mail {
+    margin-left: 0px;
+    padding-left: 0px !important;
+  }
+}
+
 .footer-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,6 +534,17 @@ input {
 
 .footer-menu li {
   margin-bottom: 24px;
+}
+
+@media screen and (max-width: 375px) {
+  .footer-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+    padding-left: 0px !important;
+  }
 }
 
 .footer-socials {
