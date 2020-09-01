@@ -370,6 +370,7 @@ button {
 @media screen and (max-width: 375px) {
   .subscribe-text p {
     font-size: 8px;
+    padding: 0px 32px;
   }
 }
 
