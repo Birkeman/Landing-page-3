@@ -97,10 +97,134 @@ button {
 .testimonials{
     display: flex;
     justify-content: space-between;
+    h4,p{
+        margin: 0px;
+    }
 }
 .single-testimonial{
     width: 33.33%;
     background-color: $dark-blue-4;
     max-height: 200px;
     max-width: 360px;
+    padding: 45px 25px;
+    border-radius: 5px;
+    position: relative;
+}
+.profile-info{
+    display: flex;
+}
+.profile-img-container{
+    margin: auto 0px;
+}
+.profile-picture{
+    border-radius: 50%;
+    width: 26px;
+}
+.profile-text{
+    margin-left: 16px;
+    p{
+        padding: 0px;
+    }
+}
+.quotes{
+    position:absolute;
+    top:0px;
+    transform: translate(-60%, -70%);
+    z-index: -1;
+}
+//Subscribe
+.subscribe{
+    // background-color: $dark-blue-1;
+    // text-align: center;
+    // max-height: 230px;
+    // max-width: 860px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe-text{
+    padding: 0px 48px;
+}
+.container{
+    position: absolute;
+    top: 50px;
+    max-width: 800px;
+    width: 66.66%;
+    min-width: 300px;
+    padding: 48px 56px;
+    background-color: $dark-blue-1;
+    border-radius: 5px;
+    text-align: center;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 80%;
+    max-width: 600px;
+    height: 48px;
+    padding-left: 32px;
+    border: none;
+    border-radius: 25px;
+    background-color: $white;
+}
+.get-btn{
+    width: 20%;
+    max-width: 250px;
+    margin-left: 16px;
+}
+
+//Footer
+footer{
+    // background-color: $dark-blue-3;
+}
+.footer-info{
+    font-family: $font-body;
+    margin-top: 50px;
+    padding: 240px 64px 16px;
+    background-color: $dark-blue-3;
+    display: flex;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: repeat(2, auto);
+    >div{
+        padding: 16px 40px;
+    }
+}
+.footer-logo{
+    position: absolute;
+    transform: translate(0%, -100%);
+}
+.footer-location{
+    display: flex;
+    width: 25%;
+    p{
+        padding-top: 0px;
+    }
+}
+.footer-phone, .footer-mail{
+    display: flex;
+    div{
+        margin: auto 16px;
+    }
+    p{
+        padding: 0px;
+    }
+}
+.footer-menu{
+    display: flex;
+    li{
+        margin-bottom: 24px;
+    }
+}
+.footer-socials{
+    margin-top: 16px;
+    ul{
+        display: flex;
+    }
+    a{
+        margin: auto 4px;
+        font-size: 24px;
+    }
 }
