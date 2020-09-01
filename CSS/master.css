@@ -371,6 +371,9 @@ button {
   .subscribe-text {
     padding: 0px 32px;
   }
+  .subscribe-text h2 {
+    font-size: 16px;
+  }
   .subscribe-text p {
     font-size: 8px;
   }

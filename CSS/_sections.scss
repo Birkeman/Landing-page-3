@@ -194,6 +194,9 @@ button {
 .subscribe-text{
     padding: 0px 48px;
     @media screen and (max-width:375px){
+        h2{
+            font-size: 16px;
+        }
         p{
             font-size: 8px;
             
