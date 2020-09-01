@@ -1,7 +1,9 @@
+//Header
 header{
     padding: $pad-mid;
     display: flex;
     justify-content: space-between;
+    background-color: $dark-blue-1;
 }
 .menu{
     display: flex;
@@ -15,10 +17,90 @@ header{
 
 //Hero section
 .hero-section{
+    background-color: $dark-blue-1;
+    background-image: url("/Assets/img/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
     padding: $pad-lg;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     h1{
-        font-family: $font-heading;
-        font-size: 30px;
+        font-size: 32px;
+        line-height: 1.6;
     }
+    p{
+        padding: 0px 70px;
+    }
+    // div{
+    //     width: 60%;
+    // }
+}
+button {
+    border-radius: 25px;
+    background: linear-gradient(50deg, $accent-cyan, $accent-blue);
+    border: none;
+    font-family: $font-heading;
+    color: $white;
+    // height: 3rem;
+    font-weight: 700;
+    width: 280px;
+    max-width:280px;
+    height: 46px;
+    max-height: 46px;
+    outline: none;
+    cursor: pointer;
+}
+
+//Bullets section
+.bullets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    p{
+        font-size: 16px;
+    }
+}
+.single-bullet{
+    width: 33.33%;
+    text-align: center;
+    padding: 40px 32px;
+}
+
+//Productivity
+.productivity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+
+}
+.productivity-text{
+    padding: $pad-mid;
+}
+.productivity-link{
+    border-bottom: 1px solid $accent-cyan;
+    color: $accent-cyan;
+    img{
+        vertical-align: middle;
+    }
+}
+
+//Testimonials
+.testimonials{
+    display: flex;
+    justify-content: space-between;
+}
+.single-testimonial{
+    width: 33.33%;
+    background-color: $dark-blue-4;
+    max-height: 200px;
+    max-width: 360px;
 }
