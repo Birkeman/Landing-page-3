@@ -16,7 +16,7 @@ p{
     font-family: $font-body;
     font-size: 14px;
     line-height: 1.6;
-    padding: 0.5rem 0;
+    padding: 8px 0;
 }
 .margin-top{
     margin-top: 28px;
@@ -26,7 +26,7 @@ p{
 }
 section{
     padding: $pad-mid;
-    @media screen and (max-width:375px){
+    @media screen and (max-width:375px),(max-width:425px){
         padding: 40px 32px !important;
     }
 }
@@ -35,22 +35,30 @@ section{
     width: 100%;
     max-width: 600px;
     height: auto;
+    @media screen and (max-width:768px){
+        width: auto;
+    }
+    @media screen and (max-width:767px){
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
 }
 h1 {
     font-size: 1.7rem;
-    @media screen and (max-width:375px){
-        font-size: 1.5rem !important;
+    @media screen and (max-width:375px),(max-width:425px){
+        font-size: 24px !important;
     }
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 h3 {
-    font-size: 1.4rem;
-    @media screen and (max-width:375px){
-        font-size: 1rem;
+    font-size: 24px;
+    @media screen and (max-width:375px),(max-width:425px){
+        font-size: 16px;
     }
 }
 h1, h2, h3, h4{

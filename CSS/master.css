@@ -18,7 +18,7 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.6;
-  padding: 0.5rem 0;
+  padding: 8px 0;
 }
 
 .margin-top {
@@ -33,7 +33,7 @@ section {
   padding: 86px 75px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   section {
     padding: 40px 32px !important;
   }
@@ -46,27 +46,43 @@ section {
   height: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-section img,
+  .productive img {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section img,
+  .productive img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+}
+
 h1 {
   font-size: 1.7rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   h1 {
-    font-size: 1.5rem !important;
+    font-size: 24px !important;
   }
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 24px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   h3 {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
@@ -85,7 +101,7 @@ header {
   background-color: #1c2431;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   header {
     padding: 40px 32px !important;
   }
@@ -94,7 +110,14 @@ header {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
+  header {
+    padding: 32px 24px !important;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px), (max-width: 425px) {
   .top-logo {
     margin: auto !important;
   }
@@ -106,7 +129,7 @@ header {
   display: flex;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .menu {
     display: -webkit-box !important;
   }
@@ -116,7 +139,7 @@ header {
   padding-left: 56px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .menu li {
     padding: 5px !important;
   }
@@ -150,7 +173,13 @@ header {
           align-items: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 86px 75px;
+  }
+}
+
+@media screen and (max-width: 375px), (max-width: 425px) {
   .hero-section {
     background-image: url("/Assets/img/bg-curvy-mobile.svg") !important;
   }
@@ -165,7 +194,7 @@ header {
   padding: 0px 70px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .hero-section p {
     padding: 0px;
   }
@@ -211,14 +240,9 @@ button {
   padding: 40px 32px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .single-bullet {
     width: auto;
-  }
-}
-
-@media screen and (max-width: 375px) and (max-width: 375px) {
-  .single-bullet {
     padding: 0px;
   }
 }
@@ -240,7 +264,7 @@ button {
   padding-top: 0px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px), (max-width: 768px) {
   .productivity {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -256,7 +280,7 @@ button {
   padding: 86px 75px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .productivity-text {
     padding: 0px;
   }
@@ -271,7 +295,7 @@ button {
   vertical-align: middle;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px), (max-width: 768px) {
   .productivity-link img {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -292,7 +316,7 @@ button {
   margin: 0px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px), (max-width: 768px) {
   .testimonials {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -306,14 +330,21 @@ button {
   background-color: #202a3c;
   max-height: 200px;
   max-width: 360px;
-  padding: 45px 25px;
+  padding: 40px 24px;
   border-radius: 5px;
   position: relative;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .single-testimonial {
-    width: 90%;
+    width: auto;
+    margin: 8px auto;
+  }
+}
+
+@media screen and (max-width: 375px), (max-width: 425px) {
+  .single-testimonial {
+    width: auto;
     margin-left: 0px;
     margin-bottom: 16px;
   }
@@ -367,7 +398,7 @@ button {
   padding: 0px 48px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .subscribe-text {
     padding: 0px 32px;
   }
@@ -375,7 +406,7 @@ button {
     font-size: 16px;
   }
   .subscribe-text p {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
@@ -391,9 +422,8 @@ button {
   text-align: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .container {
-    min-width: 50%;
     max-width: 70%;
     padding: 0px;
     top: 20px;
@@ -409,7 +439,7 @@ form {
           justify-content: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -429,7 +459,7 @@ input {
   background-color: white;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   input {
     width: auto;
   }
@@ -441,17 +471,17 @@ input {
   margin-left: 16px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .get-btn {
     max-width: 100%;
     width: auto;
     min-width: 100%;
-    margin-top: 1rem;
+    margin-top: 16px;
     margin-left: 0;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   footer {
     padding-top: 300px;
     background-color: #0b1523;
@@ -472,12 +502,28 @@ input {
   padding: 16px 40px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
+  .footer-info > div {
+    padding: 16px 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-info * {
+    padding-left: 0px !important;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px), (max-width: 425px) {
   .footer-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer-info * {
+    padding-left: 0px !important;
   }
 }
 
@@ -498,16 +544,17 @@ input {
   padding-top: 0px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .footer-location {
     width: 80%;
+    padding-left: 0px !important;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .footer-contact {
     margin-left: 0px;
-    padding-left: 26px !important;
+    padding-left: 0px !important;
   }
 }
 
@@ -525,10 +572,14 @@ input {
   padding: 0px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-width: 425px) {
   .footer-phone, .footer-mail {
     margin-left: 0px;
     padding-left: 0px !important;
+  }
+  .footer-phone div, .footer-mail div {
+    margin-left: 0px;
+    margin-right: 16px;
   }
 }
 
@@ -542,7 +593,13 @@ input {
   margin-bottom: 24px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
+  .footer-menu li {
+    padding-right: 4px;
+  }
+}
+
+@media screen and (max-width: 375px), (max-width: 425px) {
   .footer-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -566,5 +623,17 @@ input {
 .footer-socials a {
   margin: auto 4px;
   font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-socials {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 375px), (max-width: 425px) {
+  .footer-socials {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=master.css.map */
