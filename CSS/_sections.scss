@@ -1,6 +1,6 @@
 //Header
 header{
-    padding: $pad-mid;
+    padding: 72px 80px 0px;
     display: flex;
     justify-content: space-between;
     background-color: $dark-blue-1;
@@ -22,11 +22,12 @@ header{
 }
 .menu{
     display: flex;
+    padding-top: 2px;
     @media screen and (max-width:375px),(max-width:425px){
         display: -webkit-box !important;
     }
     li{
-        padding-left: 56px;
+        padding-left: 58px;
         @media screen and (max-width:375px),(max-width:425px){
             padding: 5px !important;
         }
@@ -42,9 +43,10 @@ header{
     background-image: url("/Assets/img/bg-curvy-desktop.svg");
     background-repeat: no-repeat;
     background-position: bottom;
+    background-position-y: 121%;
     background-size: contain;
     padding: $pad-lg;
-    padding-top: 0px;
+    // padding-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,11 +59,13 @@ header{
         background-image: url("/Assets/img/bg-curvy-mobile.svg") !important;
     }
     h1{
-        font-size: 32px;
-        line-height: 1.6;
+        font-size: 2.468rem;
+        line-height: 1.5;
+        letter-spacing: 1px;
     }
     p{
-        padding: 0px 70px;
+        padding: 0px 50px;
+        font-size: 20px;
         @media screen and (max-width:375px),(max-width:425px){
             padding: 0px;
         }
@@ -80,10 +84,16 @@ button {
     font-weight: 700;
     width: 280px;
     max-width:280px;
-    height: 46px;
-    max-height: 46px;
+    // height: 46px;
+    // max-height: 46px;
     outline: none;
     cursor: pointer;
+}
+.btn{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 18px 0px;
+    margin-top: 14px;
 }
 
 //Bullets section
@@ -92,7 +102,7 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 0px;
+    // padding-top: 0px;
     p{
         font-size: 16px;
     }
@@ -100,11 +110,25 @@ button {
 .single-bullet{
     width: 33.33%;
     text-align: center;
-    padding: 40px 32px;
+    padding: 26px 52px 62px 37px;
     @media screen and (max-width:375px),(max-width:425px){
         width: auto;
         padding: 0px;
     }
+    p{
+        // padding: 0px;
+        font-size: 14px;
+    line-height: 1.5;
+    padding: 0px 42px;
+    margin-top: 0px;
+    }
+}
+.bullet-text{
+    padding-top: 4px;
+    font-size: 19px;
+    letter-spacing: 0.8px;
+    margin-bottom: 0px;
+    line-height: 1.3;
 }
 
 //Productivity
@@ -113,7 +137,8 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 0px;
+    // padding-top: 0px;
+    padding: 14px 105px;
     @media screen and (max-width:375px),(max-width:425px),(max-width:768px){
         flex-direction: column;
         img{
@@ -122,7 +147,8 @@ button {
     }
 }
 .productivity-text{
-    padding: $pad-mid;
+    padding-left:58px;
+    padding-top: 0px;
     @media screen and (max-width:375px),(max-width:425px){
         padding: 0px;
     }
@@ -142,8 +168,12 @@ button {
 .testimonials{
     display: flex;
     justify-content: space-between;
+    padding: 160px 140px;
     h4,p{
         margin: 0px;
+        letter-spacing: 0px;
+        line-height: 1.5;
+        font-size: 14px;
     }
     @media screen and (max-width:375px),(max-width:425px),(max-width:768px){
         flex-direction: column;
@@ -169,6 +199,7 @@ button {
 }
 .profile-info{
     display: flex;
+    margin-top: 16px;
 }
 .profile-img-container{
     margin: auto 0px;
@@ -198,6 +229,15 @@ button {
 }
 .subscribe-text{
     padding: 0px 48px;
+    h2{
+        font-size: 32px;
+        margin-top: 16px;
+        letter-spacing: 1px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 1.3;
+    }
     @media screen and (max-width:375px),(max-width:425px){
         h2{
             font-size: 16px;
@@ -215,7 +255,7 @@ button {
     max-width: 748px;
     width: 66.66%;
     min-width: 300px;
-    padding: 48px 56px;
+    padding: 0px 56px 36px;
     background-color: $dark-blue-1;
     border-radius: 5px;
     text-align: center;
@@ -229,13 +269,14 @@ button {
 form {
     display: flex;
     justify-content: center;
+    padding-top: 26px;
     @media screen and (max-width:375px),(max-width:425px){
         flex-direction: column;
         padding: 20px;
     }
 }
 input{
-    width: 70%;
+    width: 60%;
     max-width: 600px;
     height: 48px;
     padding-left: 32px;
@@ -247,9 +288,9 @@ input{
     }
 }
 .get-btn{
-    width: 30%;
+    width: 27%;
     max-width: 250px;
-    margin-left: 16px;
+    margin-left: 28px;
     @media screen and (max-width:375px),(max-width:425px){
         max-width: 100%;
         width: auto;
@@ -275,7 +316,7 @@ footer{
     background-color: $dark-blue-3;
     display: flex;
     >div{
-        padding: 16px 40px;
+        padding: 0px 56px;
         @media screen and (max-width:768px){
             padding: 16px 24px;
         }
@@ -299,7 +340,10 @@ footer{
 }
 .footer-location{
     display: flex;
-    width: 25%;
+    width: 30%;
+    padding-top: 12px !important;
+    padding-right: 0px !important;
+    // padding-right: 71px !important;
     p{
         padding-top: 0px;
     }
@@ -309,6 +353,7 @@ footer{
     }
 }
 .footer-contact{
+    padding-top: 12px !important;
     @media screen and (max-width:375px),(max-width:425px){
         margin-left: 0px;
         padding-left: 0px !important;
@@ -316,6 +361,7 @@ footer{
 }
 .footer-phone, .footer-mail{
     display: flex;
+    margin-bottom:-16px!important;
     div{
         margin: auto 16px;
     }
@@ -333,8 +379,15 @@ footer{
 }
 .footer-menu{
     display: flex;
+    padding-top: 12px !important;
+    padding-right: 40px !important;
+    padding-left: 44px !important;
+    ul{
+        padding-left: 0px;
+        margin-right: 74px;
+    }
     li{
-        margin-bottom: 24px;
+        margin-bottom: 16px;
         @media screen and (max-width:768px){
             padding-right: 4px;
         }
@@ -347,12 +400,14 @@ footer{
 }
 .footer-socials{
     margin-top: 16px;
+    padding: 0px !important;
+    padding-top: 12px !important;
     ul{
         display: flex;
     }
     a{
         margin: auto 4px;
-        font-size: 24px;
+        font-size: 30px;
     }
     @media screen and (max-width:768px){
         margin-top: 0px;
