@@ -27,7 +27,7 @@ p{
 section{
     padding: $pad-mid;
     @media screen and (max-width:375px),(max-width:425px){
-        padding: 40px 32px !important;
+        padding:12px 36px!important;
     }
 }
 .hero-section img,
@@ -48,6 +48,7 @@ h1 {
     font-size: 1.7rem;
     @media screen and (max-width:375px),(max-width:425px){
         font-size: 24px !important;
+        letter-spacing: 0.4px !important;
     }
 }
 
