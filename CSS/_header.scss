@@ -1,0 +1,43 @@
+//Header
+header{
+    padding: 72px 80px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-blue-1;
+    @media screen and (max-width:375px),(max-width:425px){
+        padding: 24px 20px;
+        padding-right: 8px;
+        img{
+            max-width: 80px;
+        }
+    }
+    @media screen and (max-width:374px){
+        padding: 32px 24px !important;
+        font-size: 12px;
+    }
+}
+.top-logo{
+    @media screen and (max-width:375px),(max-width:425px){
+        // margin: auto !important;
+    }
+}
+.menu{
+    display: flex;
+    padding-top: 2px;
+    @media screen and (max-width:375px),(max-width:425px){
+        // display: -webkit-box !important;
+        margin-top: 0px;
+        padding-top:0px;
+    }
+    li{
+        padding-left: 58px;
+        @media screen and (max-width:375px),(max-width:425px){
+            padding: 4px 16px 0px 9px;
+            letter-spacing: 0px;
+            font-size: 12px;
+        }
+    }
+    a{
+        font-family: $font-heading;
+    }
+}

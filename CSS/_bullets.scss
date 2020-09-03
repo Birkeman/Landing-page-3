@@ -1,0 +1,50 @@
+//Bullets section
+.bullets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    // padding-top: 0px;
+    p{
+        font-size: 16px;
+    }
+}
+// .bullets .single-bullet:not(:first-child) {
+//     padding-top: 45px !important;
+// }
+.single-bullet{
+    width: 33.33%;
+    text-align: center;
+    padding: 26px 52px 62px 37px;
+    @media screen and (max-width:375px),(max-width:425px){
+        width: auto;
+        padding: 106px 0px 0px 0px !important;
+        padding-top:106px;
+        img{
+            width:66px;
+        }
+        p{
+            padding: 6px 0px !important;
+        }
+        h3{
+            font-size: 16px;
+            letter-spacing: 1.3px;
+            padding-top: 14px;
+            line-height: 1;
+        }
+    }
+    p{
+        // padding: 0px;
+        font-size: 14px;
+    line-height: 1.5;
+    padding: 0px 42px;
+    margin-top: 0px;
+    }
+}
+.bullet-text{
+    padding-top: 4px;
+    font-size: 19px;
+    letter-spacing: 0.8px;
+    margin-bottom: 0px;
+    line-height: 1.3;
+}
