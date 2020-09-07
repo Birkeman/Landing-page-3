@@ -44,7 +44,13 @@
         <main>
             <section class="hero-section">
                 <div>
-                    <img src="/Assets/img/illustration-intro.png" loading="lazy" width="20px" height="20px">
+                    <picture loading="lazy">
+                        <source srcset="/Assets/img/illustration-intro.webp" type="image/webp">
+                        <source srcset="/Assets/img/illustration-intro.png" type="image/png">
+                        <img src="/Assets/img/illustration-intro.png" loading="lazy">
+                    </picture>
+
+                    <!-- <img src="/Assets/img/illustration-intro.png" loading="lazy" width="20px" height="20px"> -->
                 </div>
                 <div class="hero-text">
                     <h1>All your files in one secure location, accessible anywhere.</h1>
@@ -96,7 +102,12 @@
 
             <section class="productivity">
                 <div>
-                    <img src="/Assets/img/illustration-stay-productive.png" alt="illustration-stay-productive" loading="lazy" width="auto">
+                    <picture>
+                        <source type="image/webp" srcset="/Assets/img/illustration-stay-productive.webp">
+                        <source type="image/png" srcset="/Assets/img/illustration-stay-productive.png">
+                        <img src="/Assets/img/illustration-stay-productive.png" alt="illustration-stay-productive" loading="lazy" width="auto">
+                    </picture>
+                    <!-- <img src="/Assets/img/illustration-stay-productive.png" alt="illustration-stay-productive" loading="lazy" width="auto"> -->
                 </div>
                 <div class="productivity-text">
                     <h2>Stay productive, wherever you are</h2>
