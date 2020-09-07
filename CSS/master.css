@@ -555,6 +555,7 @@ input {
     min-width: 100%;
     margin-top: 16px;
     margin-left: 0;
+    padding: 16px;
   }
 }
 
@@ -585,7 +586,7 @@ input {
 @media screen and (max-width: 768px) {
   .footer-info > div {
     padding: 16px 24px;
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -747,6 +748,7 @@ input {
 @media screen and (max-width: 375px), (max-width: 425px) {
   .footer-socials {
     text-align: center;
+    width: 80% !important;
   }
 }
 /*# sourceMappingURL=master.css.map */
